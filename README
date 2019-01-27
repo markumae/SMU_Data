@@ -1,5 +1,1 @@
-This is important
-Categories <- c("computer programing", "math", "statistics", "machine learning, "domain expertise", "communication and presentation skills", "data visualization")
-Ranking <- c(1, 2, 3, 4, 5, 6, 7)
-Amy <- data.frame(Categories, Ranking)
-gplot(Amy, aes(1:7, Categories, Ranking)) + xlab("Ranking") + ylab("Categories")
+This is a README.md file entered for the purposes of SMU MSDS Unit 3 homework assignment (quesiton 6). For questions, contact amarkum@smu.edu.
