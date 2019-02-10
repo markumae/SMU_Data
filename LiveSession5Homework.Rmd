@@ -1,0 +1,75 @@
+---
+title: "LiveSessionRequirement"
+author: "AMarkum"
+date: "2/9/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#LiveSession5-Homework NYT Datasets
+
+## Link to Data sets: http://stat.columbia.edu/~rachel/datasets/
+
+## R code for cleaning Data:
+
+### library(readr)
+### nyt2 <- read_csv("nyt2.csv", col_types = cols(Age = col_integer(),
+### Clicks = col_integer(), Gender = col_integer(),
+### Impressions = col_integer()))
+### View(nyt2)
+### NewTable <- subset(nyt2, Age=="0", select=Age:Clicks)
+### View(NewTable)
+### NewTable2 <- subset(nyt2, Age <18, select=Age:Clicks)
+### NewTable2 <- subset(nyt2, Age <18, select=Age:Clicks)
+### NewTable <- subset(nyt2, Age<18, select=Age:Clicks)
+### NewTable2 <- subset(nyt2, Age >17 & Age <25, select=Age:Clicks)
+### NewTable3 <- subset(nyt2, Age>24 & Age <35, select=Age:Clicks)
+### NewTable4 <- subset(nyt2, Age>34 & Age <45, select=Age:Clicks)
+### NewTable5 <- subset(nyt2, Age>44 & Age <55, select=Age:Clicks)
+### NewTable6 <- subset(nyt2, Age>54 & Age <65, select=Age:Clicks)
+### NewTable7 <- subset(nyt2, Age>64, select=Age:Clicks)
+### Cleaned1 <- NewTable
+### Cleaned2 <-NewTable2
+### Cleaned3 <-NewTable3
+### Claned4 <-NewTable4
+### Cleaned4 <-NewTable4
+### Cleaned5 <-NewTable5
+### Cleaned6 <-NewTable6
+### Cleaned7 <-NewTable7
+### write_csv(Cleaned1, "Cleaned1.csv")
+### write_csv(Cleaned2, "Cleaned2.csv")
+### write_csv(Cleaned3, "Cleaned3.csv")
+### write_csv(Cleaned4, "Cleaned4.csv")
+### write_csv(Cleaned5, "Cleaned5.csv")
+### write_csv(Cleaned6, "Cleaned6.csv")
+### write_csv(Cleaned7, "Cleaned7.csv")
+### NYTFinalCleaned <- read_csv("NYTFinalCleaned.csv",
+### col_types = cols(Age = col_number(),
+### AgeRange = col_character(), Clicks = col_number(),
+### Gender = col_logical(), Impressions = col_number()))
+### View(NYTFinalCleaned)
+### dim(NYTFinalCleaned)
+### str(NYTFinalCleaned)
+
+### R Results
+
+#### [1] 449935      5
+
+
+#### Classes ???spec_tbl_df???, ???tbl_df???, ???tbl??? and 'data.frame':	449935 obs. of  5 variables:
+####  $ Age        : num  0 15 0 0 0 0 16 0 0 0 ...
+####  $ Gender     : logi  FALSE TRUE FALSE FALSE FALSE FALSE ...
+####  $ Impressions: num  9 4 5 7 11 4 7 3 5 7 ...
+####  $ Clicks     : num  1 0 0 1 0 0 0 0 0 0 ...
+####  $ AgeRange   : chr  "<18" "<18" "<18" "<18" ...
+####  - attr(*, "spec")=
+####   .. cols(
+  ..   Age = col_number(),
+####   ..   Gender = col_logical(),
+####   ..   Impressions = col_number(),
+####   ..   Clicks = col_number(),
+####   ..   AgeRange = col_character()
+####   .. )
