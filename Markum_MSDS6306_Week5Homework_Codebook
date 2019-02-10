@@ -1,0 +1,10 @@
+Q1-Q2) Two files are worked with for this week's homework: yob2016.txt and yob2015.txt
+
+The files were downloaded using R, and were wrangled according to the R code to meet the requirements for the assignment:
+  imported the txt file
+  assigned it to "df" dataframe
+  displayed both the summary and structure of the file
+  removed redundant file with misspellings
+  re-saved the final files as an object: y2016 and y2015
+  
+Q3) Attempted but not completed. 2 days (approx 16 total hours) were dedicated to merging the two completed data sets without success.
